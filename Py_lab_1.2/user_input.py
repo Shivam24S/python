@@ -1,12 +1,10 @@
 
 
-name = input("enter your name\n")
+name=input("enter your name:\n")
 
-hobby = input("enter your hobby\n")
+age = input("enter your age:\n")
 
-age =input("enter your age\n")
-
-
-print(f"your name is {name},your hobby is {hobby}, and your age is{age}")
+hobby = input("enter your hobby:\n")
 
 
+print(f"my name is{name},my age is {age} and my hobby is{hobby}")

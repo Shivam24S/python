@@ -32,3 +32,14 @@ for ch in text:
     if ch in "AEIOU":
         continue
     print(ch)
+
+
+
+
+
+
+
+
+
+
+

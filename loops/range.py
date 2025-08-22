@@ -29,7 +29,7 @@
 
 
 
-number=list(range(1,101,1))
+number=list(range(1,6,1))
 
 
 print(number)

@@ -1,4 +1,12 @@
 
+# A
+# B A
+# C B A
+# D C B A
+# E D C B A
+
+
+
 
 n=5
 

@@ -1,15 +1,6 @@
 
 
 
-num1= input("enter num1 value\n")
-
-num2= input("enter num 2 value\n")
-
-
-
-num1= int(input("enter num1 value\n"))
-
-num2= int(input("enter num 2 value\n"))
 
 
 

@@ -57,9 +57,14 @@ print(type(is_active))  # <class 'bool'>
 
 # Can hold items of mixed data types.
 
+
+
 fruits = ["apple", "banana", "cherry"]
 fruits[0] = "orange"
 print(fruits)  # ['orange', 'banana', 'cherry']
+
+print("last element",fruits[2])
+
 
 
 

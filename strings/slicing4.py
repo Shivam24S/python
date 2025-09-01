@@ -8,7 +8,7 @@ word = "welcome  to python programming"
 
 # end = exclusive
 
-# by default value for stat always 0
+# by default value for start always 0
 
 # by default value for end always till string character last length
 

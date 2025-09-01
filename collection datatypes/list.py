@@ -1,86 +1,56 @@
 
-# 🔹 List
 
-# Definition: An ordered collection of items that is mutable (can be changed after creation).
-
-# Syntax: my_list = [1, 2, 3, "apple"]
-
-# Mutability: You can add, remove, or modify elements.
-
-# mutable
+# list is order data collection and its mutable meaning we can modify the value or element of list 
 
 fruits = ["apple","banana","mango"]
 
 
-# add item in the end
-fruits.append("banana")
-
-print(fruits)
+# add methods
 
 
-# add item at specific index
+# append used to add  element in list from last 
 
-fruits.insert(2,"cherry")
-
-print(fruits)
+fruits.append("cherry")
 
 
-# add multiple item at once
+print("appending OP",fruits)
 
-fruits.extend(["strawberry","pineapple"])
 
-print(fruits)
+# insert method used to add element in list at specific position
 
-# remove
+fruits.insert(2,"blue-berry")
 
-fruits.remove("banana")
+print("adding specific position",fruits)
 
-print(fruits)
 
-# remove the last element
+#  extend method used to add more than one element in list 
+
+fruits.extend(["pineapple","watermelon"])
+
+print("adding multiple elements",fruits)
+
+
+
+
+# remove methods
 
 fruits.pop()
 
-print(fruits)
+print("removing last element",fruits)
+
+
+# 
 
 fruits.pop(2)
 
-print(fruits)
+print("removing element at specific position",fruits)
+
+
+
+fruits.remove("banana")
+
+print("removing specific element using value",fruits)
 
 del fruits[0]
 
-print(fruits)
-
-fruits.clear()
-
-print(fruits)
-
-number = [1,4,3,5]
-
-print(number.index(4))
-
-
-# count 
-
-print(number.count(2))
-
-
-#sort 
-
-
-number.sort()
-print(number)
-
-#reverse 
-
-number.reverse()
-
-print(number)
-
-copy_nums = number.copy()
-
-print(copy_nums)
-
-copy_nums[0] =5
-
-print(copy_nums)
+print("deleting first element in list",fruits)

@@ -54,3 +54,40 @@ print("removing specific element using value",fruits)
 del fruits[0]
 
 print("deleting first element in list",fruits)
+
+# update 
+
+fruits[0]="pineapple"
+
+print("updating fruits",fruits)
+# other operation
+
+number=[1,4,5,6,8,7,3,1,1]
+
+number.sort()
+
+print("sorted numbers",number)
+
+# sort reverse
+
+number.sort(reverse=True)
+
+print("sorted number in descending order",number)
+
+# reverse the list
+
+number.reverse()
+
+print("reversing the list",number)
+
+# count
+
+
+print("counting specific number",number.count(1))
+
+
+number2=[1,4,5,6,8,7,3,1,1]
+
+# index
+
+print("getting index of ",number2.index(4))

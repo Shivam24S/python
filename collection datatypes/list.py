@@ -2,7 +2,7 @@
 
 # list is order data collection and its mutable meaning we can modify the value or element of list 
 
-fruits = ["apple","banana","mango"]
+fruits = ["apple","banana","mango",]
 
 
 # add methods
@@ -57,37 +57,38 @@ print("deleting first element in list",fruits)
 
 # update 
 
-fruits[0]="pineapple"
 
-print("updating fruits",fruits)
-# other operation
 
-number=[1,4,5,6,8,7,3,1,1]
+fruits[0] = "pineapple"
 
+print("updating first element",fruits)
+
+# sort 
+
+number = [5,8,4,6,9,1,1,1,1]
+
+print("unordered number",number)
+
+# ascending
 number.sort()
 
-print("sorted numbers",number)
+print("sorted number",number)
 
-# sort reverse
+
+# descending order 
 
 number.sort(reverse=True)
 
-print("sorted number in descending order",number)
+print("number in descending order",number)
 
-# reverse the list
-
-number.reverse()
-
-print("reversing the list",number)
 
 # count
 
 
-print("counting specific number",number.count(1))
 
+print("counting value",number.count(1))
 
-number2=[1,4,5,6,8,7,3,1,1]
 
 # index
 
-print("getting index of ",number2.index(4))
+print("index",number.index(1))

@@ -1,8 +1,17 @@
-# immutable can;t be modify
+# immutable can't be modify
 
 
-tup = (1,3,2,4,5,6,9,4,2,0)
+tup = (1,3,2,4,5,6,9,4,2,0,2)
 
-print(tup.count(2))
 
-print(tup.index(3))
+
+# count
+
+
+print("count",tup.count(2))
+
+
+
+# index
+
+print("index",tup.index(3))

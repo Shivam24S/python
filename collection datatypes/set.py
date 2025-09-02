@@ -3,70 +3,45 @@
 # set is un order collection of unique elements
 
 
+# unique
+
 number={1,2,3,1,2,3,4,5,6}
 
-
-print("removing the duplicate",number)
-
+print("set",number)
 
 
-number.add(7)
+# add
 
-print("adding element to set",number)
+number.add(10)
+
+print("number added",number)
 
 # remove
 
-# number.remove(6)
 
-# print("removing the element",number)
+number.pop()
 
-# will generate error 
-# number.remove(6)
+print("any value will be removed due to un order",number)
 
-# print("removing the element",number)
-
-
-# 
-
-number.discard(6)
-
-print("discarding number if not error will not generate",number)
-
-
-removedNum = number.pop()
-
-print("removed number",removedNum)
-
-print("all",number)
-
-
-# clear
-
+# will delete everything
 number.clear()
 
-print("clear",number)
+
+print("empty",number)
 
 
 
-# other operation
 
-
-num1={1,2,3}
+num1= {1,2,3}
 
 num2={3,4,5}
 
 
-# union
-print("will remove the duplicate and return whole joint set",num1.union(num2))
+print("intersection",num1.intersection(num2))
 
-# intersection (common in both)
 
-print("common in both set",num1.intersection(num2))
+print("symmetric difference",num1.symmetric_difference(num2))
 
-# difference
+print("union",num1.union(num2))
 
 print("difference",num1.difference(num2))
-
-# symmetric difference
-
-print("symmetric diff",num1.symmetric_difference(num2))

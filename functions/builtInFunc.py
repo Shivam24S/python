@@ -1,91 +1,140 @@
-# built in function
+# function are used to reuse the same logic often in whole program
 
+# using function we are following DRY (Do not repeat yourself)  principal
 
-# using print we can log the value as output
+# print function is used to log the output
+
 print("hello")
 
 
-# using input function we can take input from users
-input("enter something")
+# input function is used to take input from user
+
+# input("enter something")
 
 
-# type
-# using type operator we can  get the datatype of our variable
 
-num=10
-
-print(type(num))
-
-# typecasting 
-# using typecasting function we can change the datatypes
-
-num="10"
-
-print(type(num))
-
-int(num)
-
-print(type(num))
-
-
-# str 
-
-num=10
-
-print(type(num))
-
-
-print(str(num))
-
-print(type(num))
-
-
-# float 
-
-num=2
-
-
-print(type(num))
-
-print(float(num))
-
-
-print(type(num))
-
-
+# to check length we are using len 
 
 word = "python"
 
-print(len(word))
+print("length od the word",len(word))
 
 
-# sum 
+number=[10,5,8,9,6,3,7,1]
 
-numbers = [4,5,6,1,3,6,5,2,6]
-
-print(sum(numbers))
+print("sorted number are in ascending order",sorted(number))
 
 
-# sort
+# descending order
 
-print(sorted(numbers))
-
-
-# decescinding
-
-print(sorted(numbers,reverse=True))
+print("reversed",sorted(number,reverse=True))
 
 
-# max
+# # sum method used to perform addition
+
+# num1=10
+
+# num2=20
+
+# # result =  sum(num1+num2)
+
+# print("total of two  number",result)
 
 
-scores=[10,50,6,0,40,80,90]
+# type 
 
-print(max(scores))
+greet="hello"
 
-print(min(scores))
+print("type of greet",type(greet))
+
+
+num=10
+
+print("type of num",type(num))
+
+
+# type casting used for convert data to other data type
+
+
+# int() convert to decimal number
+
+num="10"
+
+print("type of num",type(num))
+
+
+newNum = int(num)
+
+
+print("type of num",type(newNum))
+
+
+# integer to  float
+
+
+num=10
+
+print("type of num",type(num))
 
 
 
-for i in range(1,10):
-    print(i)
+decimalNum = float(10)
+
+print("type of decimalNum",type(decimalNum))
+
+
+
+scores = [10,20,50,40,9,80,70,90]
+
+print("max scores",max(scores))
+
+
+# minimum find the minimum value
+
+print("minimum scores",min(scores))
+
+
+
+
+
+
+# range (start,end,step) , end is exclusive will not count 
+
+# for i in range(1,5):
+#     print(i)
+
+
+
+
+
+
+
+# deep copy (by value )
+
+
+a=5
+
+b=a
+
+print(a)
+
+print(b)
+
+b=10
+
+print(a)
+
+
+
+# shallow copy  (by reference)
+
+
+number1= [1,5,6,45,5,5]
+
+# print(number1)
+
+number2=number1
+
+number2[0]=10
+
+print(number1)

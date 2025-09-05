@@ -1,63 +1,77 @@
+import datetime
+
+students=[{"id":1,"name":"alice"},{"id":2,"name":"john"}]
 
 
-students=[]
 
 while True:
-    print("\n--- Student Management ---")
-    print("1. Show students")
-    print("2. Add student")
-    print("3. Update student")
-    print("4. Delete student")
-    print("5. Exit")
+    print("\nwelcome to student management system\n")
 
-    choice=input("enter your choice ")
+    print("1. Read All student data")
+    print("2. Add student data")
+    print("3. update student data")
+    print("4. delete student data")
+    print("5. exit")
 
 
- # Read
+    choice = input("enter your choice ")
 
-    if choice == "1":
-        if students == []:
-            print("no student data found")
+# read
+    if(choice == "1"):
+        if(students== []):
+            print("No student data found")
         else:
             for s in students:
-                print("ID",s["id"],"Name",s["name"])
+                print("id:",s["id"],"name",s["name"])
 
-# create
-    elif choice == "2":
-        name=input("enter your name")
-        sId=len(students)+1
+    elif(choice == "2"):
+        id=len(students)+1
+        # id = datetime.datetime.now().microsecond
+        name= input("enter your name ")
 
-        students.append({"id":sId,"name":name})
-        print("student added")
-# update
-    elif choice == "3":
+        students.append({"id":id,"name":name})
 
-        sId= int(input("enter id to update: "))
+        print("student data added")
+
+
+    elif(choice == "3"):
+        sId = int(input("enter student id to update "))
+
         for s in students:
-            if s["id"] == sId:
-                s["name"] = input("enter new name")
-                print("student data updated")
+            if(s["id"] == sId):
+                 s["name"] =input("enter new student data to update ")
+                 print("student data updated")
+                 break
+        else:
+            print("student not found")    
+
+    elif(choice == "4"):
+        sId = int(input("enter student id to delete "))
+        for s in students:
+            if(s["id"]==sId):
+                students.remove(s)
+                print("student data deleted")
                 break
         else:
-            print("student with this id not found")
+            print("student not found")     
 
-#delete             # 
-    
-    elif choice == "4":
-        sId=int(input("enter id to delete "))
-        for s in students:
-            if s["id"] == sId:
-             students.remove(s)
-             print("student deleted")
-             break
-        else:
-            print("student id not found")
-
-    elif choice == "5":
+    elif(choice == "5"):
         print("good bye")
-        break
+        break;       
+
     else:
-        print("invalid choice please choose correctly")        
+        print("invalid choice, choose correctly")            
+
+
+
+
+        
+
+
+        
+
+   
+
 
 
 

@@ -1,39 +1,62 @@
 
+# type constructor
+
+# int(),float(),
+
+
+
 # string to integer
 
-num1=5
+num1= "5"
 
-num2="10"
+num2=2
 
-
-result = num1+int(num2)
+result = int(num1)+num2
 
 print(result)
 
 
-# float to integer
 
-pi = 3.14
+# list to tuple
 
-whole = int(pi)
 
-print(whole)
+numbers=[4,5,6,8,4,99,5,658,4]
+
+newSet=tuple(numbers)
+
+print(newSet)
 
 
 # tuple to list 
 
-tup=(20,40,5,0,10,2,0)
+vegetables = ("potato","ladiesFinger","carrot")
 
-newList = list(tup)
 
-print(newList)
+newVegetablesList = list(vegetables)
+
+newVegetablesList.append("chilli")
+
+print(newVegetablesList)
+
+
+
+
+# float to integer
+
+pi=3.14
+
+newWholeNumber=int(pi)
+
+print(newWholeNumber)
 
 
 # list to set 
 
-numList = [1,2,1,2,3,5,6,23,5]
 
-newSet = set(newList)
+numbers2=[1,5,6,8,4,5,8,1,1,52,52,23,2,55,1,1]
 
-print(newSet)
+uniqueElement= set(numbers2)
+
+print(uniqueElement)
+
 

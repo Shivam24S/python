@@ -1,7 +1,7 @@
 
 
 
-word = "welcome  to python programming"
+word = "welcome  to python programming " 
 
 
 # string = [start:end:step]

@@ -3,9 +3,11 @@
 
 word = "python13112"
 
-print(word.isalpha())
+# word="12345"
 
-print(word.isdigit())
+# print(word.isalpha())
+
+# print(word.isdigit())
 
 
 print(word.isalnum())

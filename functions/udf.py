@@ -1,54 +1,56 @@
 
+# syntax of UDF 
 
-# def functionName (parameter):
-#     return
+def functionName(parameter):
+    return
 
-# optional: parameter and return value in function
+# optional  parameter, return value are optional
 
-
-
-
-# example 
 
 def greet():
     print("hello")
 
-
+# invoking the function
 greet()    
 
 
-# with parameter 
 
+# addition, function with parameter
 
-def add(a,b):
-    print(a+b)
-
-
-add(5,10)
-
-
-# with return value
-
-def square(num):
-    return num*num
-
-
-result = square(6)
-
-print(result)
-
-
-# with default parameter
-
-
-def createAccount(name,amount=2000):
-    print("account created of ",name, "and total balance ",amount)
+# we are receiving parameter in function
+def addition(x,y):
+    result = x+y
+    print(result)
 
 
 
-createAccount("john")
+# we are passing the argument
+addition(10,2)   
+
+addition(50,8)
+
+addition(10,20)
 
 
-createAccount("alice",5000)
+# bank account example to understand default parameter
+
+
+def createBankaAccount(name,amount=2000):
+    print("account created",name,"and balance is ",amount )
+
+
+
+createBankaAccount("john")
+
+
+
+createBankaAccount("alice",5000)
+
+
+
+
+
+
+
 
 

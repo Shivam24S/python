@@ -2,6 +2,8 @@ import datetime
 
 students=[{"id":1,"name":"alice"},{"id":2,"name":"john"}]
 
+# students=[]
+
 
 
 while True:

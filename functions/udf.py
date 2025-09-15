@@ -11,7 +11,7 @@ def greet():
     print("hello")
 
 # invoking the function
-greet()    
+# greet()    
 
 
 

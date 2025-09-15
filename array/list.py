@@ -1,95 +1,141 @@
 
 
-number = [10,50,6,0,70,80,40]
+number = [1,2,8,7,6,5,4,3]
 
-print("array or list",number)
+print(number)
 
-
-# add
-
-number.append(70)
-
-print("new element added in array",number)
+# add methods 
 
 
-# insert
+number.append(10)
+
+print(number)
 
 
-number.insert(2,24)
+# insert 
 
-print("array or list",number)
+number.insert(4,20)
 
+print(number)
 
 # extend
 
+number.extend([30,40])
 
-number.extend([0,0])
-print("array or list",number)
+print(number)
+
+
+# remove 
+
+number.pop()
+
+print(number)
+
+
+number.pop(3)
+
+print(number)
 
 
 # remove
 
+number.remove(10)
 
-number.pop()
-
-print("array or list",number)
+print(number)
 
 
-number.pop(0)
+# del
 
-print("array or list",number)
+del number[0]
 
-# remove 
 
-number.remove(24)
+print(number)
 
-print("array or list",number)
 
+# clear
+
+# number.clear()
+
+
+# print(number)
 
 # update 
 
-
 number[0]=100
 
-print("array or list",number)
-
-
-# access
-
-print(number[0])
+print(number)
 
 
 # sort
 
-
 number.sort()
 
-print("sorted",number)
+print(number)
 
-# descending
+
+# descending order
 
 number.sort(reverse=True)
 
-print("descending",number)
-
-
-# max 
+print(number)
 
 
 
-print("max value",max(number))
-
-# min
 
 
-print("min value",min(number))
 
-# count
+# exercise
 
-print("count 0 :",number.count(0))
 
-# index
+vegetables = ["potato","tomato","ginger","lemon"]
 
-print("index",number.index(0))
+
+print(vegetables)
+
+
+# adding 4 vegetables
+
+
+vegetables.extend(["lady-finger","onion","cabbage","brinjal"])
+
+
+print(vegetables)
+
+
+# i want to count how many elements in list
+
+print(len(vegetables))
+
+
+# i want to delete ginger from my list
+
+vegetables.remove("ginger")
+
+print(vegetables)
+
+
+# sort
+
+vegetables.sort()
+
+print(vegetables)
+
+
+# reverse
+
+vegetables.sort(reverse=True)
+
+
+print(vegetables)
+
+
+# update
+
+
+vegetables[2] = "carrot"
+
+print(vegetables)
+
+
 
 

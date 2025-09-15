@@ -78,7 +78,7 @@ print("type of num",type(num))
 
 
 
-decimalNum = float(10)
+decimalNum = float(num)
 
 print("type of decimalNum",type(decimalNum))
 
